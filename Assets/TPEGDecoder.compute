@@ -1,0 +1,327 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel EntropyInvert
+#pragma kernel DCTInvert
+#pragma kernel BufferTest
+
+#include "TPEG.cginc"
+
+int WIDTH;
+int HEIGHT;
+
+int BLOCK_WIDTH;
+int BLOCK_HEIGHT;
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+RWTexture2D<float4> DecodedTexture;
+
+RWStructuredBuffer<int> EncodedBlockBuffer;
+RWStructuredBuffer<int> DCTBlockBuffer;
+
+////////////////////////////////////////////////////////////////
+// EntropyInvert
+//
+
+[numthreads(1, 1, 1)]
+void EntropyInvert(
+	uint3 gid : SV_GroupID,
+	uint3 did : SV_DispatchThreadID)
+{
+	int groupId = gid.y * BLOCK_WIDTH + gid.x;
+	int colorId = gid.z;
+
+	int encodedBlockBufferIdxStart = (groupId * YCrCb_SIZE + colorId) << BLOCK_SIZE_RECV_AS_INT_LOG2;
+	int encodedBlockBufferIdxCurrent;
+
+	int dctBlockBufferIdx = (groupId * YCrCb_SIZE + colorId) << BLOCK_SIZE_LOG2;
+
+	int encodedBlockBufferElementIdx;
+
+	int currentElem;
+
+	int i;
+
+	int elemIdx;
+
+	for (i = 0, elemIdx = 0; i < (BLOCK_SIZE - 1); i++, elemIdx++) {
+
+		// Get current encoded Buffer's element Index.
+		encodedBlockBufferElementIdx = (elemIdx >> 1);
+
+		int encodedBlockBufferIdxCurrent = encodedBlockBufferIdxStart + encodedBlockBufferElementIdx;
+
+		// (encodedBlockBufferElementIdx << 1) == i
+		// true: ---> 0, 2, 4, 6, ..... ---> little endian
+		// true: ---> 1, 3, 5, 7, ..... ---> big endian
+
+		currentElem = (int(uint(EncodedBlockBuffer[encodedBlockBufferIdxCurrent]) << (((encodedBlockBufferElementIdx << 1) == elemIdx) * SHORT_TYPE_BIT_SIZE)) >> SHORT_TYPE_BIT_SIZE);
+
+		//////////////////////////////////
+		// Data structure
+		// level's sign bit	: 1bit
+		// run's all bit	: 6 bit
+		// level's rest bit	: 9bit
+		//
+
+		//////////////////////////////////
+		// Get run's value
+		// 
+		// 1 1 1 1 1 1 1 1
+		//       &
+		// 0 1 1 1 1 1 1 0 (= 126)
+		//
+		// 0 0 1 1 1 1 1 1 (= 63)
+
+		i += ((uint(currentElem) >> 9) & 63);
+
+		//////////////////////////////////
+		// Get level's value
+		// 
+		// 1 1 1 1 1 1 1 1 
+		//        &
+		// 0 0 0 0 0 0 0 1 (= 1)
+		// level = currentElem & ((1 << 31) + (1 << 8) + 255)
+		//
+
+		// ((1 << 31) + (1 << 8) + 255) = -2147483137
+		DCTBlockBuffer[dctBlockBufferIdx + i] = currentElem & (-2147483137);
+	}
+}
+
+////////////////////////////////////////////////////////////////
+// DCTInvert
+//
+
+/*
+* RGB2yCbCr_InvertConvertor
+* R	= Y+1.402Cr
+* G	= Y-0.714Cr-0.344Cb
+* B	= Y+1.772Cb
+*/
+inline float R(float y, float cr) {
+	return PIXEL_MAX_VALUES_INV * (y + 1.402 * (cr - 128));
+}
+
+inline float G(float y, float cr, float cb) {
+	return PIXEL_MAX_VALUES_INV * (y - 0.7141 * (cr - 128) - 0.3441 * (cb - 128));
+}
+
+inline float B(float y, float cb) {
+	return PIXEL_MAX_VALUES_INV * (y + 1.772 * (cb - 128));
+}
+
+inline float TmpInvert(int sign, int swap, int quantization) {
+	return float(int(uint(swap) - uint(sign * (1 << 31))) * (1 - sign * 2) * quantization);
+
+	/*
+	* 
+	* 	return (float)(
+		(int)(
+			(uint)swap -
+			(uint)(sign * (1 << (INT_TYPE_BYTE_SIZE * 8 - 1)))
+			) * (1 - sign * 2) * quantization
+		);
+	*/
+}
+
+static const float DCTv8matrix[] = {
+	0.3535533905932738f,  0.4903926402016152f,  0.4619397662556434f,  0.4157348061512726f,  0.3535533905932738f,  0.2777851165098011f,  0.1913417161825449f,  0.0975451610080642f,
+	0.3535533905932738f,  0.4157348061512726f,  0.1913417161825449f, -0.0975451610080641f, -0.3535533905932737f, -0.4903926402016152f, -0.4619397662556434f, -0.2777851165098011f,
+	0.3535533905932738f,  0.2777851165098011f, -0.1913417161825449f, -0.4903926402016152f, -0.3535533905932738f,  0.0975451610080642f,  0.4619397662556433f,  0.4157348061512727f,
+	0.3535533905932738f,  0.0975451610080642f, -0.4619397662556434f, -0.2777851165098011f,  0.3535533905932737f,  0.4157348061512727f, -0.1913417161825450f, -0.4903926402016153f,
+	0.3535533905932738f, -0.0975451610080641f, -0.4619397662556434f,  0.2777851165098009f,  0.3535533905932738f, -0.4157348061512726f, -0.1913417161825453f,  0.4903926402016152f,
+	0.3535533905932738f, -0.2777851165098010f, -0.1913417161825452f,  0.4903926402016153f, -0.3535533905932733f, -0.0975451610080649f,  0.4619397662556437f, -0.4157348061512720f,
+	0.3535533905932738f, -0.4157348061512727f,  0.1913417161825450f,  0.0975451610080640f, -0.3535533905932736f,  0.4903926402016152f, -0.4619397662556435f,  0.2777851165098022f,
+	0.3535533905932738f, -0.4903926402016152f,  0.4619397662556433f, -0.4157348061512721f,  0.3535533905932733f, -0.2777851165098008f,  0.1913417161825431f, -0.0975451610080625f
+};
+
+static const int ZigZagIndexInvert[] = {
+	 0,  1,  8, 16,  9,  2,  3, 10,
+	17, 24, 32, 25, 18, 11,  4,  5,
+	12, 19, 26, 33, 40, 48, 41, 34,
+	27, 20, 13,  6,  7, 14, 21, 28,
+	35, 42, 49, 56, 57, 50, 43, 36,
+	29, 22, 15, 23, 30, 37, 44, 51,
+	58, 59, 52, 45, 38, 31, 39, 46,
+	53, 60, 61, 54, 47, 55, 62, 63
+};
+
+// 50% COMPRESSION
+static const int ForwardQuantizationTable50Luminance[] = {
+	 16,  11,  10,  16,  24,  40,  51,  61,
+	 12,  12,  14,  19,  26,  58,  60,  55,
+	 14,  13,  16,  24,  40,  57,  69,  56,
+	 14,  17,  22,  29,  51,  87,  80,  62,
+	 18,  22,  37,  56,  68, 109, 103,  77,
+	 24,  35,  55,  64,  81, 104, 113,  92,
+	 49,  64,  78,  87, 103, 121, 120, 101,
+	 72,  92,  95,  98, 112, 100, 103,  99
+};
+
+static const int ForwardQuantizationTable50Chrominance[] = {
+	17, 18, 42, 47, 99, 99, 99, 99,
+	18, 21, 26, 66, 99, 99, 99, 99,
+	24, 26, 56, 99, 99, 99, 99, 99,
+	47, 66, 99, 99, 99, 99, 99, 99,
+	99, 99, 99, 99, 99, 99, 99, 99,
+	99, 99, 99, 99, 99, 99, 99, 99,
+	99, 99, 99, 99, 99, 99, 99, 99,
+	99, 99, 99, 99, 99, 99, 99, 99
+};
+
+// shared memory
+groupshared float CurBlockLocal1[BLOCK_SIZE * DST_COLOR_SIZE];
+groupshared float CurBlockLocal2[BLOCK_SIZE * DST_COLOR_SIZE];
+
+[numthreads(BLOCK_AXIS_SIZE, BLOCK_AXIS_SIZE, 1)]
+void DCTInvert(
+	uint3 gid : SV_GroupID,
+	uint3 tid: SV_GroupThreadID,
+	uint3 did: SV_DispatchThreadID)
+{
+	const int tx = tid.x;
+	const int ty = tid.y;
+	const int bx = gid.x;
+	const int by = gid.y;
+
+	const int bIdx = by * BLOCK_WIDTH + bx;
+	const int tIdx = (ty << BLOCK_AXIS_SIZE_LOG2) + tx;
+
+	const int tOffset = tIdx * YCrCb_SIZE;
+
+	// for loop index.
+	int i;
+
+	// DecTexture's index.
+	int2 decFrameBufferIdx = int2((bx << BLOCK_AXIS_SIZE_LOG2) + tx, (by << BLOCK_AXIS_SIZE_LOG2) + ty);
+
+	// DCTBlockBuffer's index.
+	int dctBlockBufferIdx = bIdx * BLOCK_SIZE * YCrCb_SIZE;
+
+	int swapY = DCTBlockBuffer[dctBlockBufferIdx + (Y_IDX << BLOCK_SIZE_LOG2) + tIdx];
+	int swapCr = DCTBlockBuffer[dctBlockBufferIdx + (Cr_IDX << BLOCK_SIZE_LOG2) + tIdx];
+	int swapCb = DCTBlockBuffer[dctBlockBufferIdx + (Cb_IDX << BLOCK_SIZE_LOG2) + tIdx];
+
+	// Clear DCTBlockBuffer.
+	DCTBlockBuffer[dctBlockBufferIdx + (Y_IDX << BLOCK_SIZE_LOG2) + tIdx] = 0.0f;
+	DCTBlockBuffer[dctBlockBufferIdx + (Cr_IDX << BLOCK_SIZE_LOG2) + tIdx] = 0.0f;
+	DCTBlockBuffer[dctBlockBufferIdx + (Cb_IDX << BLOCK_SIZE_LOG2) + tIdx] = 0.0f;
+
+	// Rearrange the zigzag index to its original order.
+	const int zigzagInvert = ZigZagIndexInvert[tIdx];
+	const int zigzagInvertOffset = zigzagInvert * DST_COLOR_SIZE;
+	int signY = swapY < 0;
+	int signCr = swapCr < 0;
+	int signCb = swapCb < 0;
+
+	int quantizationLuminance = ForwardQuantizationTable50Luminance[zigzagInvert];
+	int quantizationChrominance = ForwardQuantizationTable50Chrominance[zigzagInvert];
+
+	CurBlockLocal1[zigzagInvertOffset + Y_IDX] = TmpInvert(signY, swapY, quantizationLuminance);
+	CurBlockLocal1[zigzagInvertOffset + Cr_IDX] = TmpInvert(signCr, swapCr, quantizationChrominance);
+	CurBlockLocal1[zigzagInvertOffset + Cb_IDX] = TmpInvert(signCb, swapCb, quantizationChrominance);
+
+	GroupMemoryBarrierWithGroupSync();
+
+	float resultY = 0.0f;
+	float resultCr = 0.0f;
+	float resultCb = 0.0f;
+	float currentElem;
+
+	// row 1.
+	int DCTv8matrixIndex = (ty << BLOCK_AXIS_SIZE_LOG2) + 0;
+
+	// what row.
+	int CurBlockLocal1Index = ((0 << BLOCK_AXIS_SIZE_LOG2) + tx) * DST_COLOR_SIZE;
+
+	// Calculate column sums.
+	[unroll]
+	for (i = 0; i < BLOCK_AXIS_SIZE; i++) {
+		currentElem = DCTv8matrix[DCTv8matrixIndex];
+		resultY += currentElem * CurBlockLocal1[CurBlockLocal1Index + Y_IDX];
+		resultCr += currentElem * CurBlockLocal1[CurBlockLocal1Index + Cr_IDX];
+		resultCb += currentElem * CurBlockLocal1[CurBlockLocal1Index + Cb_IDX];
+
+		DCTv8matrixIndex++;
+		CurBlockLocal1Index += BLOCK_AXIS_SIZE * DST_COLOR_SIZE;
+	}
+
+	CurBlockLocal2[tOffset + Y_IDX] = resultY;
+	CurBlockLocal2[tOffset + Cr_IDX] = resultCr;
+	CurBlockLocal2[tOffset + Cb_IDX] = resultCb;
+
+	GroupMemoryBarrierWithGroupSync();
+
+	resultY = 0.0f;
+	resultCr = 0.0f;
+	resultCb = 0.0f;
+
+	// row 2.
+	DCTv8matrixIndex = (tx << BLOCK_AXIS_SIZE_LOG2) + 0;
+
+	// what line.
+	int CurBlockLocal2Index = ((ty << BLOCK_AXIS_SIZE_LOG2) + 0) * DST_COLOR_SIZE;
+
+	// Calculate sum of columns.
+	[unroll]
+	for (i = 0; i < BLOCK_AXIS_SIZE; i++)
+	{
+		currentElem = DCTv8matrix[DCTv8matrixIndex];
+		resultY += currentElem * CurBlockLocal2[CurBlockLocal2Index + Y_IDX];
+		resultCr += currentElem * CurBlockLocal2[CurBlockLocal2Index + Cr_IDX];
+		resultCb += currentElem * CurBlockLocal2[CurBlockLocal2Index + Cb_IDX];
+
+		DCTv8matrixIndex++;
+		CurBlockLocal2Index += DST_COLOR_SIZE;
+	}
+
+#if 0
+	if (swapY + swapCr + swapCb == 0) {
+		DecodedTexture[decFrameBufferIdx] = float4(
+			0.5f,
+			0.5f,
+			0.5f,
+			1.0f
+		);
+		return;
+	}
+
+	DecodedTexture[decFrameBufferIdx] = float4(
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f
+	);
+	return;
+#else
+	DecodedTexture[decFrameBufferIdx] = float4(
+		B(resultY, resultCb),
+		G(resultY, resultCr, resultCb),
+		R(resultY, resultCr),
+		1.0f
+	);
+#endif
+
+	return;
+}
+
+[numthreads(1, 1, 1)]
+void BufferTest(
+	uint3 gid : SV_GroupID,
+	uint3 tid : SV_GroupThreadID,
+	uint3 did : SV_DispatchThreadID)
+{
+	int groupId = gid.y * BLOCK_WIDTH + gid.x;
+	int colorId = gid.z;
+
+	int dctBlockBufferIdx = (groupId * YCrCb_SIZE + colorId) << BLOCK_SIZE_LOG2;
+	int level;
+
+	for (int i = 0; i < BLOCK_SIZE; i++, dctBlockBufferIdx++) {
+		// Note that glsl does not leave a sign bit because
+		// it performs integer multiplication with shift operation.
+
+		level = DCTBlockBuffer[dctBlockBufferIdx];
+		// DCTBlockBuffer[dctBlockBufferIdx] = level << 1;
+		DCTBlockBuffer[dctBlockBufferIdx] = int(TmpInvert(level < 0, level, 2));
+	}
+}

@@ -1,4 +1,4 @@
-# TLabShareScreen_Client_Unity
+# TLabShareScreen_Client_Unity_Android
 Client program (UnityAsset) to decode packets from TLabShareScreen_Server
 
 ## demonstration
@@ -20,5 +20,8 @@ https://youtu.be/g4nKSnYe6RA
 OS: Android 10  
 GPU: Qualcomm Adreno 619  
 
+## Note
+This asset works by using it together with [TLabShareScreen_Server](https://github.com/TLabAltoh/TLabShareScreen_Server).
+
 ## link  
-TLabShareScreen_Server: 
+[TLabShareScreen_Server](https://github.com/TLabAltoh/TLabShareScreen_Server)

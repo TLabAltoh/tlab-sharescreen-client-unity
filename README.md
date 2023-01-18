@@ -19,8 +19,13 @@ https://user-images.githubusercontent.com/121733943/210447171-dd79dcfd-c64e-460e
 OS: Android 10, 12  
 GPU: Qualcomm Adreno 505, 619  
 
+## Requires
+Unity project --> Project settings --> Rendering --> Color space --> Gamma  
+Unity project --> Project settings --> Rendering --> Graphics API --> Open GL only (remove valkan) and check "require OpenGL ES 3.1".
+
 ## Note
-This asset works by using it together with [TLabShareScreen_Server](https://github.com/TLabAltoh/TLabShareScreen_Server).
+- This asset works by using it together with [TLabShareScreen_Server](https://github.com/TLabAltoh/TLabShareScreen_Server).  
+- Very slow performance due to software encoder. Also, it does not work properly with Oculus quest.
 
 ## link  
 [TLabShareScreen_Server](https://github.com/TLabAltoh/TLabShareScreen_Server)

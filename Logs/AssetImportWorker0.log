@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ja' Physical Memory: 16197 MB
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ja' Physical Memory: 65349 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
+C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56963
-Successfully changed project path to: C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
-C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
+57269
+Successfully changed project path to: C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
+C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,119 @@ C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLab
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 88.72 ms, found 3 plugins.
+Player connection [17444] Host "[IP] 192.168.3.10 [Port] 0 [Flags] 2 [Guid] 1709777417 [EditorId] 1709777417 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J2OCBHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [17444] Host "[IP] 192.168.3.10 [Port] 0 [Flags] 2 [Guid] 1709777417 [EditorId] 1709777417 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J2OCBHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 75.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.8f1 (b30333d56e81)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android/Assets
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   NVIDIA
-    VRAM:     5980 MB
-    Driver:   31.0.15.2698
+    VRAM:     8032 MB
+    Driver:   31.0.15.4633
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010648 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.019814 seconds.
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 322 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 87.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.772 seconds
+- Completed reload, in  1.017 seconds
 Domain Reload Profiling:
-	ReloadAssembly (772ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (553ms)
-			LoadAssemblies (82ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (803ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (131ms)
+			SetupTypeCache (108ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (337ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (611ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (101ms)
+				InitializePlatformSupportModulesInManaged (397ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
+				RefreshPlugins (75ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (100ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007175 seconds.
+Registered in 0.007764 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
+- Completed reload, in  1.088 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1155ms)
-		BeginReloadAssembly (195ms)
+	ReloadAssembly (1089ms)
+		BeginReloadAssembly (115ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (127ms)
-		EndReloadAssembly (843ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (274ms)
+			SetupTypeCache (265ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (368ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (407ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (219ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (260ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3690 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (165.9 KB). Loaded Objects now: 4150.
-Memory consumption went from 126.2 MB to 126.1 MB.
-Total: 2.163500 ms (FindLiveObjects: 0.194900 ms CreateObjectMapping: 0.084800 ms MarkObjects: 1.812800 ms  DeleteObjects: 0.070600 ms)
+Unloading 3176 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (167.1 KB). Loaded Objects now: 3639.
+Memory consumption went from 114.4 MB to 114.3 MB.
+Total: 2.380300 ms (FindLiveObjects: 0.267400 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.971600 ms  DeleteObjects: 0.079200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,63 +173,892 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 42543.130791 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.011732 seconds 
+  Time since last request: 184941.540278 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c61e6e0e59af009d85b7157962d985') in 0.024211 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.829384 seconds.
-  path: Assets/Scenes/Main.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca70194d3cb690848fa898ec183c274') in 0.004691 seconds 
+  Time since last request: 169.398169 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7efa9f4ee414e1743c53faeb21bb6cf') in 0.008783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.021412 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c803c29c15d2049c40328001bfcf030') in 0.002902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.947405 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f670464fb6acb292b4550d401b61cd') in 0.002743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.222887 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d4c50512ecfe018a5490af62bf264c') in 0.003013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.187164 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5886bc9ed9faa5b1d5cb267b69484415') in 0.002782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.082532 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714dfc9783b2f2b8914355125bc9a458') in 0.029237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.447286 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983cb53cc1203c6b4174a95fec50ee40') in 0.004029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.425201 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c0f2440eb3a3af4a9f01d78f71cabc') in 0.054109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.955918 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aae6dba0c0ca3ec9ffca74040b94165') in 0.002833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.388884 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16b0d44fe518044fed9e835fb56a4d7') in 0.003049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.672522 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716cfea72068721ea4b25c670f09592d') in 0.002674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.757223 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a61d6300276fba706683a2f8e59900') in 0.002757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.815835 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e08b2284579e955a9032c152ce5fbb') in 0.002503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.237646 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ddb15f5886e4ab33da80aee72226a7') in 0.002910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.521684 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7bdeab453ec689c18b815ace60311a') in 0.002918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.815775 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504fec28f96f5f85aeb90d99e411ab70') in 0.002993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.083111 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70996f60af70a15811045b40135e084d') in 0.002863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.116716 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd118ae94229e8d0fc39c546da58ca5c') in 0.002927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.607943 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d3a5127d5a1999b9132c8729620899') in 0.002798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.336512 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cd111bca532eabc3297a843aca0c7d') in 0.002903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.525905 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac63eb09fcf2c457c23c6a6ac79f4572') in 0.002635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.666642 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5e9db9f810d87c58e8232dbd579783') in 0.002829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.917010 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590b8eb257f4d00d7f5dd6524998f94c') in 0.002614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.560861 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db579e0f9ed0327906e10ade7f4a0308') in 0.003649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.761275 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363db1a995a74ba6579bd66910f1b918') in 0.002773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.162273 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7c7379ff3710f3dbe93763a8c7d50f') in 0.002794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.223438 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2da157cdb5a2fb3adc6cc987ac86a92') in 0.003164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.468938 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da3de28cdf864a25a8fb63b72bd25a0') in 0.003010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.285042 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b263c02ff5f1330175a1c9b30523f65') in 0.002893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.107131 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8489af4b297f5d9e594a35bae21c53e') in 0.002755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.674341 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a98988b284494250391063463d310a') in 0.003152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.013242 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d375a18e989ff133b1d96ab460ad642') in 0.002734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.759787 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851a8b5f5d7b871cd62808760d24765a') in 0.003042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.116128 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7a03fd296361bac6e45d66154b6240') in 0.002706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.286771 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d108b743ee78cf3eeb650556b966952') in 0.002950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.190463 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec4c711ae47989d4b5c5ded5a03b58f') in 0.002693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.980294 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc27560ef95ab8f0ff76f6d34397c5fb') in 0.003040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.993101 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932fcfbfc07549fa67b3a2e203413b32') in 0.002885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.067989 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42640f64ea5dbdc134d1bc32aaf5690') in 0.002674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.167838 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1308435c298c82d0915ee09bca820243') in 0.003010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.722956 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398306cc4770bf0cbc898bc34e47b96a') in 0.002957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.396920 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2743b10b5475ee08cfa229b31b31442f') in 0.002941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.856493 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a98ecf99c42a30026bd8627e765d2ab') in 0.002838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.019236 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ac0af16668ab63ab0c845a2c4e36ec') in 0.003135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.288549 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d93ac16e0e0a4063df58bff1680602') in 0.002899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.153496 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca4cf92b085beae6a76908c335bdfc3') in 0.002647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.620538 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c9e9266bab0e0b6940357751e4bba8') in 0.002840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.429743 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3040dbfded1b4cfa95da52a0fc6251') in 0.003034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.673507 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce99fa8d6f2f7dd0c280207350354b2') in 0.003298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 217.603093 seconds.
+  path: Assets/Scripts/MTPEG.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEG.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0334a1b911a89470041c46a4deea1c72') in 0.009167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.928369 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431881f09f5c701ab3d16544cd5aa5cc') in 0.009150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.766465 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2dc57a66e20c5a3ba8209cfac13465') in 0.002656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.891285 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8289a45891d76f704455041128ddac54') in 0.002855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.855155 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a12313484e6486d9b12ff33748b7cf3') in 0.002710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.608641 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4699da52479dea21df967e4663fd7ad9') in 0.003103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.482558 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44782286cc8661d718ef6fe8697448bc') in 0.002821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.548179 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6585c1ec7bf2d90d8a3d969dd917c4a') in 0.003036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.489796 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0aa9cb6e4fac900f25c09bce85917c') in 0.003025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.257137 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287f24d4a292aac07b3cef250e0e33e3') in 0.003337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.661292 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9776f30bbd5c22134f921056cafd3303') in 0.002676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.151283 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f617055b4043d6404c240455e5fd15c') in 0.002885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.642370 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe7514f184e93ba13f6c2a429f5e2b7') in 0.002757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.593753 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aaed531189265c8ff3fb250dc850476') in 0.002777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.984088 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33359145a12cbef43c7bc0ccae65744') in 0.003097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.360787 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da5497dbaa05a57505b976555f2fcb5') in 0.002838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.658866 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5127b3c8bf32124648e7966e01266747') in 0.002697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.756822 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2410dca59e83cb71c3adaf7800a513') in 0.002724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.959272 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4054e6ac76b5164ab8fc4e101ff2a44') in 0.002645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.945859 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289fff3cb5203f60fed1add79792aae0') in 0.002932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.478961 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd79eddc2b74a35db131bcd6134e96a') in 0.002854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.346643 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a6248f5886f15ef151facffe324b0b') in 0.002668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.473273 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070305aefef4cca152dc3866b1225d0d') in 0.003000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.682740 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224f22f071f363136a5dd7c1e35b3146') in 0.003169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.488308 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89ba50a13a320e2a079093fabb808a3') in 0.002783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.720381 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e8aa53af1dd78bccf3ea6ea885b1b0') in 0.003196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.500639 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1829f16d42f70bc224b8279ceadf5c3f') in 0.002841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.137570 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3e394ddee729a555ab0092e8f898c4') in 0.002691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.566067 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e280f17245680f492effe6b2530e4ea6') in 0.003046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.454158 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa6d0b655041caad9e7c82af1fe18ac') in 0.002718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.510797 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a395e6c5e4faa952842981185e8cd864') in 0.002904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.934369 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27f462604b4670a38191e742ba60b2c') in 0.002867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.011408 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af0606608f628cf7f1970d33c68b5f4') in 0.010120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.259397 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1723d90da4162b9c269c55d7eee55959') in 0.009000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.097054 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8efd551f878dc7e08285e44fc00e360') in 0.002987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.483980 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf53ff20247c4b4393e5f79f24354949') in 0.002768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.248908 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e2e1318f90ff6ec732fb9147658ee0') in 0.002998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.543743 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619bb7078253db3a4c1dbe2471d1b373') in 0.002608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.519793 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bb90ad3af4df5c63cb3d76313ee15c') in 0.004862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.976858 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df9a8d10863640c9e0511c8126608dd') in 0.002687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.062583 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4f975f31888deb8fe82c9b430b4871') in 0.002830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.708733 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d167cd3166fe0e0c403ddba637612e') in 0.002945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.535028 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7120094351e216797ab9dd843823ac9') in 0.002823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.562808 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af24fa0af0ead150ff71965a1f356327') in 0.002881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.098678 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e416dff1201aab0e6810a324485d4aad') in 0.002867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.048857 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d0cd70530eef792b7a0ea68ad455cf') in 0.002813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.624540 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240abe6573c3b7c239a576fd7daa3d7e') in 0.002770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.206976 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0186d2cac809897cc50ee038cfbc8cea') in 0.002704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.707909 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778e1710123eda0dd1dff51ebc561e5e') in 0.002829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.895914 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21cef75d52f3168ccc3304cf32ccfb1') in 0.002910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.367103 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc02a79e18a8b4c955e69fa3e89a689') in 0.002800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.904026 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10101dbcbe7b137ef0ec11dde7437c5') in 0.003013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.031340 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa4c8b1bfb0d43b9d1975d1eeec4a7f') in 0.002819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.757202 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ca21156a657fa484034629787ae37c') in 0.002840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.620132 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a92058057414502181bd81e276b47aa') in 0.003208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.951972 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b3c18f59f88a39cd4cebbb51a03f5b') in 0.002962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.871098 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a230794b7870c4077de45d3881932e4') in 0.002730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 264.894776 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffeb5c4e6667bead5150523d232e064') in 0.002759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.811622 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387c9cb1f04f9ffd9c52d144631a0e0e') in 0.002879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.151258 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b226590df1524c281d91f22d69d8ab1c') in 0.002753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.728917 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75974c3df0a3443bdfb2489c39cbd4a5') in 0.002645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 582.252256 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd7f325c6db28ca2ad5cb8e79f7a881') in 0.003004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.859332 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811992ec05238fb7bf89eb36f8d985ca') in 0.002709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.938724 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f5b01eb720fd94bd0f57e911115e4d7') in 0.002674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.070418 seconds.
+  path: Assets/Scripts/Constants.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Constants.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04dd48d6041713de129896485bf65a96') in 0.008844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.030666 seconds.
+  path: Assets/Scripts/Util.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Util.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66421a2a6a93b719710d8c1826b6de1e') in 0.008180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.370721 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e512786dda34cfa4d18fedabaefd5a') in 0.002918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.859843 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f524dea85871cb81e70525e59eb158') in 0.002972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.340361 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014a32cd80efb03b545c8c227a54c2f3') in 0.002774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.531147 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09abeee64abe99723f966aea23ec316') in 0.002870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.156736 seconds.
+  path: Assets/Scripts/Constants.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Constants.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ba5cf8e65f1c6e038443e7307e2530') in 0.002833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 97.810620 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce42b17a5a1f52443582eb801430d800') in 0.002938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.595510 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a0a7f6e92f9ee5d4d3471424674740') in 0.002953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.043841 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da9c942e8bfa9f89895123e6ef0de3b') in 0.003059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.413680 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5a83cf2482f330c49cbd5e937db61d') in 0.002867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.000825 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba1adb410741e59b1e368036a4192de') in 0.002879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.602907 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba8441f750e749d4bdd9f7daf6bdcf0') in 0.002842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.071749 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f4dd5fc34f06bb324788d7d759edd5') in 0.003051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.501882 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1273521cb0ccf3c63ac3385f9f99f3') in 0.002614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.208947 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5528ddaf7459ec9b873f4236403dd6') in 0.002988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.675622 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3961a393ec248b37fcbf1005bcf6977f') in 0.002773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.401939 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f9e4848b3a107c2f02e2bacc6e6a77') in 0.002989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 141.288430 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987f80ce114cf30c94fc24755b7361c2') in 0.002847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 318.243337 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd03bc907e659cb694ff2fb62d34f861') in 0.003008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.317097 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdec6124bb31aeebc38948965724c1b3') in 0.003194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 199.952792 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7451bc1284300064f7c848ae284c17c1') in 0.002823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1568.551763 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5ae17dbabb7c5962ebad44a52ba9d8') in 0.003306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.093391 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be64210f4b1ce6b3006df26e54b8d89') in 0.002727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 155.619268 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58667502c76465b3553843355ec735e7') in 0.002733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.778108 seconds.
+  path: Assets/Scripts/MTPEGUtil.cs
+  artifactKey: Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGUtil.cs using Guid(4d778efc06444f54ab20eb62ddd762b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51230c1c7661df3578939457bcb1307f') in 0.002816 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008454 seconds.
+Registered in 0.010020 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.045 seconds
+- Completed reload, in  1.015 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1045ms)
-		BeginReloadAssembly (138ms)
+	ReloadAssembly (1015ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (801ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (782ms)
 			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
+			SetupTypeCache (257ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (351ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (348ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (206ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (133.1 KB). Loaded Objects now: 4153.
-Memory consumption went from 126.0 MB to 125.9 MB.
-Total: 3.056400 ms (FindLiveObjects: 0.344500 ms CreateObjectMapping: 0.090900 ms MarkObjects: 2.584000 ms  DeleteObjects: 0.036000 ms)
+Unloading 3157 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3643.
+Memory consumption went from 112.9 MB to 112.7 MB.
+Total: 3.197600 ms (FindLiveObjects: 0.378400 ms CreateObjectMapping: 0.078100 ms MarkObjects: 2.703900 ms  DeleteObjects: 0.036100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -233,3 +1070,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1951.226260 seconds.
+  path: Assets/Scripts/TPEGDecoder.compute
+  artifactKey: Guid(9551e7ce551741d479c90ca9d0043a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TPEGDecoder.compute using Guid(9551e7ce551741d479c90ca9d0043a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65e02af87a4b8a9ae58bf7b896ae246') in 0.028757 seconds 

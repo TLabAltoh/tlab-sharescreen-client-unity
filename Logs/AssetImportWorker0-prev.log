@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ja' Physical Memory: 16197 MB
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ja' Physical Memory: 65349 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
+C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58912
-Successfully changed project path to: C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
-C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android
+62192
+Successfully changed project path to: C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
+C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,181 +47,184 @@ C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLab
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 107.19 ms, found 3 plugins.
+Player connection [18912] Host "[IP] 192.168.3.10 [Port] 0 [Flags] 2 [Guid] 2309607413 [EditorId] 2309607413 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J2OCBHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18912] Host "[IP] 192.168.3.10 [Port] 0 [Flags] 2 [Guid] 2309607413 [EditorId] 2309607413 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J2OCBHK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 78.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.8f1 (b30333d56e81)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen_Series/TLabShareScreen_WIreless_Android/Assets
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/no name boy/source/GameDev/TLabUnityProject/TLabShareScreen/TLabShareScreen_Client_Unity_Android/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   NVIDIA
-    VRAM:     5980 MB
-    Driver:   31.0.15.2698
+    VRAM:     8032 MB
+    Driver:   31.0.15.4633
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011081 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.015245 seconds.
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1319 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 100.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 78.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.769 seconds
+- Completed reload, in  2.042 seconds
 Domain Reload Profiling:
-	ReloadAssembly (770ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (2042ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (582ms)
-			LoadAssemblies (56ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1822ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (120ms)
+			SetupTypeCache (115ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (347ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (1616ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (74ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (101ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				InitializePlatformSupportModulesInManaged (1396ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (94ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010752 seconds.
+Registered in 0.006703 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.120 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1121ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (866ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (374ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3359 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (166.7 KB). Loaded Objects now: 3822.
+Memory consumption went from 117.6 MB to 117.4 MB.
+Total: 2.472900 ms (FindLiveObjects: 0.205200 ms CreateObjectMapping: 0.086800 ms MarkObjects: 2.106500 ms  DeleteObjects: 0.073900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 175106.569956 seconds.
+  path: Assets/TPEG.cginc
+  artifactKey: Guid(2e2350e7ee8e45f43920f00708e8a3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TPEG.cginc using Guid(2e2350e7ee8e45f43920f00708e8a3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930cbd4716930f037943c8dc08d67304') in 0.027825 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008280 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.277 seconds
+- Completed reload, in  1.023 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1278ms)
-		BeginReloadAssembly (199ms)
+	ReloadAssembly (1024ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (123ms)
-		EndReloadAssembly (947ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (792ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (419ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (337ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (245ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3690 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (222.4 KB). Loaded Objects now: 4150.
-Memory consumption went from 126.9 MB to 126.7 MB.
-Total: 2.349700 ms (FindLiveObjects: 0.166000 ms CreateObjectMapping: 0.073600 ms MarkObjects: 2.009400 ms  DeleteObjects: 0.099800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 678.977720 seconds.
-  path: Assets/TLabPlayManeger.cs
-  artifactKey: Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TLabPlayManeger.cs using Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed19e259833e490f9e6503e52dc2010') in 0.030587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.969174 seconds.
-  path: Assets/TLabPlayManeger.cs
-  artifactKey: Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TLabPlayManeger.cs using Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a187c3c8fd0765579daca1a8e54d25c') in 0.002556 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009367 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1104ms)
-		BeginReloadAssembly (154ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (843ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (288ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (365ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (214ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3685 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (189.4 KB). Loaded Objects now: 4153.
-Memory consumption went from 126.9 MB to 126.7 MB.
-Total: 2.908900 ms (FindLiveObjects: 0.355700 ms CreateObjectMapping: 0.101700 ms MarkObjects: 2.346600 ms  DeleteObjects: 0.103600 ms)
+Unloading 3355 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3828.
+Memory consumption went from 117.4 MB to 117.2 MB.
+Total: 1.983700 ms (FindLiveObjects: 0.187200 ms CreateObjectMapping: 0.075000 ms MarkObjects: 1.684800 ms  DeleteObjects: 0.035900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -236,146 +239,51 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007782 seconds.
+Registered in 0.008903 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.039 seconds
+- Completed reload, in  1.047 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1040ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1048ms)
+		BeginReloadAssembly (153ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (810ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3685 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (189.5 KB). Loaded Objects now: 4156.
-Memory consumption went from 126.9 MB to 126.7 MB.
-Total: 3.008300 ms (FindLiveObjects: 0.347900 ms CreateObjectMapping: 0.107000 ms MarkObjects: 2.453200 ms  DeleteObjects: 0.099400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (186.8 KB). Loaded Objects now: 4156.
-Memory consumption went from 52.3 MB to 52.1 MB.
-Total: 3.035900 ms (FindLiveObjects: 0.375900 ms CreateObjectMapping: 0.120200 ms MarkObjects: 2.434300 ms  DeleteObjects: 0.104600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (186.6 KB). Loaded Objects now: 4156.
-Memory consumption went from 52.3 MB to 52.1 MB.
-Total: 3.267400 ms (FindLiveObjects: 0.375900 ms CreateObjectMapping: 0.118700 ms MarkObjects: 2.659200 ms  DeleteObjects: 0.112600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008077 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen_Series\TLabShareScreen_WIreless_Android\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.039 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1040ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (796ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (788ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (273ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (347ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (320ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3685 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (189.5 KB). Loaded Objects now: 4159.
-Memory consumption went from 126.9 MB to 126.7 MB.
-Total: 3.094100 ms (FindLiveObjects: 0.328700 ms CreateObjectMapping: 0.094000 ms MarkObjects: 2.575900 ms  DeleteObjects: 0.095000 ms)
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (133.1 KB). Loaded Objects now: 3833.
+Memory consumption went from 117.4 MB to 117.3 MB.
+Total: 2.166900 ms (FindLiveObjects: 0.194900 ms CreateObjectMapping: 0.080200 ms MarkObjects: 1.858600 ms  DeleteObjects: 0.032500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -389,12 +297,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.00 ms, found 3 plugins.
+Registering precompiled user dll's ...
+Registered in 0.009728 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (186.9 KB). Loaded Objects now: 4159.
-Memory consumption went from 52.3 MB to 52.1 MB.
-Total: 3.156600 ms (FindLiveObjects: 0.383300 ms CreateObjectMapping: 0.122700 ms MarkObjects: 2.536000 ms  DeleteObjects: 0.113800 ms)
+Mono: successfully reloaded assembly
+- Completed reload, in  1.002 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1003ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3836.
+Memory consumption went from 117.4 MB to 117.3 MB.
+Total: 2.027400 ms (FindLiveObjects: 0.261400 ms CreateObjectMapping: 0.088200 ms MarkObjects: 1.644100 ms  DeleteObjects: 0.032800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -406,3 +354,785 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009528 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1048ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (797ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3355 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3839.
+Memory consumption went from 117.4 MB to 117.3 MB.
+Total: 3.060500 ms (FindLiveObjects: 0.264400 ms CreateObjectMapping: 0.128200 ms MarkObjects: 2.630000 ms  DeleteObjects: 0.036300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009406 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (361ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3848.
+Memory consumption went from 117.6 MB to 117.5 MB.
+Total: 1.977900 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.073400 ms MarkObjects: 1.690200 ms  DeleteObjects: 0.030800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 125.870643 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.014003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.835519 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(43c4ddcedc8a9d74fa0361f0dcd3a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(43c4ddcedc8a9d74fa0361f0dcd3a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22262dfdecfdb9ae8403954a3da08d21') in 0.007811 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006913 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (369ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (133.1 KB). Loaded Objects now: 3851.
+Memory consumption went from 117.6 MB to 117.5 MB.
+Total: 3.101700 ms (FindLiveObjects: 0.394800 ms CreateObjectMapping: 0.099300 ms MarkObjects: 2.572800 ms  DeleteObjects: 0.033600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.105374 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.013148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.950989 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(d77039719846d5a40ad39b2c85a1b3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(d77039719846d5a40ad39b2c85a1b3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f889abc27c039d1008a9ceaed2fde7') in 0.008379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.293345 seconds.
+  path: Assets/Fonts/DotGothic16
+  artifactKey: Guid(c6e5db675a1f7ce4394b2bdb38ed097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/DotGothic16 using Guid(c6e5db675a1f7ce4394b2bdb38ed097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63743ac09d2edf31b4a96d1703c96dd') in 0.008104 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008857 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\no name boy\source\GameDev\TLabUnityProject\TLabShareScreen\TLabShareScreen_Client_Unity_Android\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1045ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3408 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.8 MB). Loaded Objects now: 3888.
+Memory consumption went from 120.8 MB to 120.1 MB.
+Total: 3.446500 ms (FindLiveObjects: 0.397600 ms CreateObjectMapping: 0.106100 ms MarkObjects: 2.612500 ms  DeleteObjects: 0.329000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 818.743890 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6ba0e1a678dfbe3ff08b2fbc8f881f') in 0.023552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.727200 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323ad7f7a338f586b1283536bb8b7aa2') in 0.003235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.162702 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b4311475c9692bb48a602bffbca486') in 0.002588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.568476 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2d7f3570558629603b1d38cfbc6b96') in 0.002546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.858507 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63429ab7bcd0bcec8b9ee12fa33cd5cc') in 0.003094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.273562 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a3d6fef4b96c032595f01526c500fa') in 0.002655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.957879 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcc9e9dd222ae92578e1f2ec5b2142b') in 0.002905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.229669 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4bb80c76fe86a93c5763091a3f9059') in 0.002650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.159346 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f09c61651fed9844842a0d466e989fe') in 0.002990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.187582 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a608be4e78568b624a1586cbae0e01') in 0.002626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.151209 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc1adc2c86a43c5061703df3d66a16c') in 0.002887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.727071 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4fdce49833ed448ed5b6f242015327') in 0.002569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.399251 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131ada47392426bbb69eaafa0c4ca036') in 0.002723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.640791 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f256f9b3e2c5d85e2e9f8246c67abfe5') in 0.002632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.779349 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874d5f3dd41be829b4733ced695bf38b') in 0.003107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.217412 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e78dbf35f1580ac44faaa97b0f11f0') in 0.002757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.073476 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e783f94715f33aa6678c42bfcd8f7c81') in 0.002868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.660881 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6ca16bcb214b778904e63128e820ed') in 0.002695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.644268 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16094d059777a5a896b3acc13e6ad5b5') in 0.002768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.367522 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8201f09aaefa6d5f695bdafcea28198') in 0.002624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.519386 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001c48fe5c6a53c189d572a1317d4b05') in 0.002670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.389087 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b27cf2fc49f6a9a31bfbd43a88f7b3') in 0.003072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.370769 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f01c9236d57eb466651045be40e3086') in 0.002639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.376905 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db192c88f4c89f822175da90b0f705f') in 0.002570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.624456 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d63651b9e3edc0d103b804c02eb803f') in 0.002704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.055522 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef3b9b22a65570111964b514626b64c') in 0.002820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.305366 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5112f033134bb411f0dbff334c66e583') in 0.002775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.245132 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55d51ebf62e53cab70f76fe48f80576') in 0.008637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.858738 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ceb14b2865661c4508cd7ca8105c4e') in 0.002776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.390822 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2716e14570e4ad006a799e4f741ccf') in 0.002723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.937802 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b73399f1b8e841c6be30d0e742636c') in 0.002673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.814938 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba54695efa289e91091b0dea3e304d30') in 0.002617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.355314 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28417245f49c354387cbf353f273e370') in 0.002794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.228206 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860b82e771ff311349eefc45019b1766') in 0.002815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.678069 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17822c50c46d8eb42f3486e45f60444c') in 0.002995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.023725 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a260b974ee840a19c75880ec4911073') in 0.002561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.816674 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea1429740d9e8b362cbefd8360d92b3') in 0.004240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.783299 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cc2c8ac75cbcaa58cc0476452c73d1') in 0.002453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.179134 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a3fbd51125e712c0598c9fe6a36dae') in 0.002481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.261251 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eea6c1cd7506ef2a9da120d52cb2bde') in 0.002596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.988194 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601b8324b9963ece678a64d92c23c0ef') in 0.002888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.156463 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd677a39ee351beba00bec8528ff702') in 0.002679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.769611 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b692a085cf86ee640a7e8cb60956915a') in 0.002851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.559594 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec539dec4adc45ce993e550a77d89705') in 0.002784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.513490 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ba2a2c977005ea2250a9108ef801bc') in 0.002591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.037997 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb1a7ec161911b5a87168c2f3c7f85e') in 0.002992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.880792 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4a42411ed0b4b625292d2fe2bbe5a1') in 0.002915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.929016 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9154de71d4db0d53092e8b20ae269c') in 0.002661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.252018 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20445239122f17037c593a4e8e840c0') in 0.002697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.776941 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91051ae15d8e03f5640c8a3ff56b659') in 0.003934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.627250 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f42c41db4fdcee80399871d6bd94c6') in 0.002698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.173585 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4486a8f83345588530559f9e34927333') in 0.002942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.461374 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4decd72c44583970f0b667453bf23b') in 0.002674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.908261 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fb14b336fb50e6775b27af9e526f8c') in 0.002925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.554981 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916d850aee432e0687e9bd4e968e3c6f') in 0.002901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.707474 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4890f8d71c29002871cf90a47cd6bb4d') in 0.003187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.761626 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2f5e7d638a009f0497d2d90b31ba9c') in 0.002351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.149146 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ee8fcab60dbd40ac5734352a97f578') in 0.003018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.778309 seconds.
+  path: Assets/Scripts/TLabUnitySocket.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabUnitySocket.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754b12f6efd574e000784bf50a16d48c') in 0.002889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.935616 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79546944f3e80eeea4fb8a71d4c15b0f') in 0.008522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.588643 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1407aeaaa922a64844d2e53f80ba02e5') in 0.002637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.656348 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05d96925c3f5ed4a98f958588840bc3') in 0.002826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.079044 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66624ce225810d1535356fa8d00282f5') in 0.003107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.826015 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453b65238f41ccb653b518cc65490d3b') in 0.003088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.258305 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7dd341d65580c6fe107c1dd2eda59b0') in 0.002620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.310265 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ffe4f8c524366ee27746342f0c7a9f5') in 0.003039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 150.897347 seconds.
+  path: Assets/Scripts/UDPSocketUtil.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UDPSocketUtil.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35bc14dc0be120b7f0be75804f17b90d') in 0.007763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.705742 seconds.
+  path: Assets/Scripts/TLabShareScreenManeger.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabShareScreenManeger.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc4f3e7aacd0c772cd944b6adb5a6ff') in 0.002884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.663974 seconds.
+  path: Assets/Scripts/ShareScreenClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShareScreenClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e0ec7cd8a0cd5713dd7d72d1f471df') in 0.008683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.248404 seconds.
+  path: Assets/Scripts/ShareScreenClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShareScreenClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226b73bb1354be12016d2752146f2bfc') in 0.002574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 202.207993 seconds.
+  path: Assets/Scripts/ShareScreenClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShareScreenClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69af549fe0e5b386028722433d475fb') in 0.002741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.421936 seconds.
+  path: Assets/Scripts/ShareScreenClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShareScreenClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65a9ffa13616744e1ac38e7b9b23179') in 0.002935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.004677 seconds.
+  path: Assets/Scripts/TLabPlayManeger.cs
+  artifactKey: Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TLabPlayManeger.cs using Guid(74aa430fea5bca740b1c49bd0747907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7754573e98c3a8e3dc37388d37d1ffe8') in 0.009105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.328167 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac85ee0b2da676603789bf420dc0c98') in 0.007762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 570.343082 seconds.
+  path: Assets/Scripts/MTPEGClient.cs
+  artifactKey: Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEGClient.cs using Guid(07b105869900d3c479c5f172063c9de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3dd38943778701aa8461e3be65af92') in 0.002855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.525384 seconds.
+  path: Assets/Scripts/TPEGConstant.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TPEGConstant.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34959b4af8e84ac592228387c2ffba2') in 0.009635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.254709 seconds.
+  path: Assets/Scripts/MTPEG.cs
+  artifactKey: Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MTPEG.cs using Guid(63ad1ae7d2c0e5c4f9380c545a28b98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198a8dd1eae2f6eaa88bdb7fd98f2218') in 0.007524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 453.940614 seconds.
+  path: Assets/Scripts/CSUtil.cs
+  artifactKey: Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CSUtil.cs using Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6261d7ab36f5b9dc715affd62e110a9') in 0.008159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.545609 seconds.
+  path: Assets/Scripts/CSUtil.cs
+  artifactKey: Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CSUtil.cs using Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9309827b9277ce4d9c8e350f305679') in 0.002633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.687718 seconds.
+  path: Assets/Scripts/CSUtil.cs
+  artifactKey: Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CSUtil.cs using Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c249a9a7dae1b3f56b4bd583d704569') in 0.002488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.435209 seconds.
+  path: Assets/Scripts/CSUtil.cs
+  artifactKey: Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CSUtil.cs using Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ce65e021050acf1c1b59350a559c72') in 0.003061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.991617 seconds.
+  path: Assets/Scripts/CSUtil.cs
+  artifactKey: Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CSUtil.cs using Guid(af928444ad53ad449bc017ca36f9a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86226367db143de2c9a3aed50e8e06f') in 0.002608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.857255 seconds.
+  path: Assets/Scripts/TPEGDecoder.compute
+  artifactKey: Guid(9551e7ce551741d479c90ca9d0043a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TPEGDecoder.compute using Guid(9551e7ce551741d479c90ca9d0043a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f57e5ae1521752c3998ff10ee38e764') in 0.020084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.414024 seconds.
+  path: Assets/Scripts/TPEG.cginc
+  artifactKey: Guid(2e2350e7ee8e45f43920f00708e8a3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TPEG.cginc using Guid(2e2350e7ee8e45f43920f00708e8a3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e2efa586cde7314650bd6547a265a8f') in 0.008889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.905080 seconds.
+  path: Assets/Plugins/UniRx
+  artifactKey: Guid(e2921a1227af12947ab583519eadbc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/UniRx using Guid(e2921a1227af12947ab583519eadbc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ae43030f3b5653310b49897a02d792') in 0.009665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 469.069219 seconds.
+  path: Assets/Scripts/UDPSocketUtil.cs
+  artifactKey: Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UDPSocketUtil.cs using Guid(e14430e48d40eaa4a8009969d364135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731f8270dbd88984f2612e7ea9de49c9') in 0.002946 seconds 

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace TLab.MTPEG
 {
     public static class Constants
@@ -20,9 +22,9 @@ namespace TLab.MTPEG
 
         public const byte FRAME_LOOP_NUM = 1;
 
-        public const short DCT_BLOCK_SIZE = 1443;
+        public const short DGRAM_BUFFER_SIZE = 1443;
 
-        public const short MTU = PacketHedder.HEDDER_SIZE + DCT_BLOCK_SIZE; // 1500
+        public const short MTU = PacketHedder.HEDDER_SIZE + DGRAM_BUFFER_SIZE; // 1500
 
         public static class Decoder
         {
@@ -32,17 +34,17 @@ namespace TLab.MTPEG
 
             public const string DECODED_TEXTURE = "DecodedTexture";
 
-            public const string SCREEN_WIDTH = "WIDTH";
+            public static int SCREEN_WIDTH = Shader.PropertyToID("_SCREEN_WIDTH");
 
-            public const string SCREEN_HEIGHT = "HEIGHT";
+            public static int SCREEN_HEIGHT = Shader.PropertyToID("_SCREEN_HEIGHT");
 
-            public const string BLOCK_WIDTH = "BLOCK_WIDTH";
+            public static int BLOCK_WIDTH = Shader.PropertyToID("_BLOCK_WIDTH");
 
-            public const string BLOCK_HEIGHT = "BLOCK_HEIGHT";
+            public static int BLOCK_HEIGHT = Shader.PropertyToID("_BLOCK_HEIGHT");
 
-            public const string ENCODED_BLOCK_BUFFER = "EncodedBlockBuffer";
+            public static int ENCODED_FRAME_BUFFER = Shader.PropertyToID("EncodedFrameBuffer");
 
-            public const string DCT_BLOCK_BUFFER = "DCTBlockBuffer";
+            public static int DCT_BLOCK_BUFFER = Shader.PropertyToID("DCTBlockBuffer");
         }
 
         public static class DCT

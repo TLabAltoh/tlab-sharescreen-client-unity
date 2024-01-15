@@ -106,6 +106,8 @@ namespace TLab.MTPEG
             public const int Cr_SIZE = 3;   // block hedder's Cr cannel size
 
             public const int Cb_SIZE = 4;   // block hedder's Cb cannel size
+
+            public static int[] CHANNEL_SIZE_IDX = new int[] { Y_SIZE, Cr_SIZE, Cb_SIZE };
         }
     }
 }

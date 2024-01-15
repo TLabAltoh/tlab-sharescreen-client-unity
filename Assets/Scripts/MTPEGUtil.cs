@@ -107,17 +107,19 @@ namespace TLab.MTPEG
             {
                 byte block_index_be = (byte)sr.BaseStream.ReadByte();
                 byte block_index_le = (byte)sr.BaseStream.ReadByte();
-                byte size_b = (byte)sr.BaseStream.ReadByte();
-                byte size_g = (byte)sr.BaseStream.ReadByte();
-                byte size_r = (byte)sr.BaseStream.ReadByte();
+
+                byte[] sizes = new byte[3];
+                sizes[0] = (byte)sr.BaseStream.ReadByte();
+                sizes[1] = (byte)sr.BaseStream.ReadByte();
+                sizes[2] = (byte)sr.BaseStream.ReadByte();
 
                 if (block_idx < 64)
                 {
                     Debug.Log($"block_index_be: {block_index_be}");
                     Debug.Log($"block_index_le: {block_index_le}");
-                    Debug.Log($"size_b: {size_b}");
-                    Debug.Log($"size_g: {size_g}");
-                    Debug.Log($"size_r: {size_r}");
+                    Debug.Log($"size_b: {sizes[0]}");
+                    Debug.Log($"size_g: {sizes[1]}");
+                    Debug.Log($"size_r: {sizes[2]}");
                 }
 
                 ushort block_index = (ushort)((ushort)(block_index_be << 8) | block_index_le);
@@ -131,21 +133,21 @@ namespace TLab.MTPEG
                 {
                     byte* encoded_frame_buffer_copy_ptr = encoded_frame_buffer_ptr + block_index * BLOCK_OFFSET_SIZE;
 
-                    foreach (var size in new byte[] { size_b, size_g, size_r })
+                    for (int i = 0; i < sizes.Length; i++)
                     {
-                        ushort copy_length = (ushort)(size << ENDIAN_SIZE_LOG2);
+                        ushort copy_length = (ushort)(sizes[i] << ENDIAN_SIZE_LOG2);
                         if (copy_length > DCT.BLOCK_SIZE * ENDIAN_SIZE)
                         {
                             break;
                         }
 
-                        for (int i = 0; i < copy_length; i++)
+                        for (int j = 0; j < copy_length; j++)
                         {
-                            *(encoded_frame_buffer_copy_ptr + i) = (byte)sr.BaseStream.ReadByte();
+                            *(encoded_frame_buffer_copy_ptr + j) = (byte)sr.BaseStream.ReadByte();
 
                             if (block_idx < 64)
                             {
-                                Debug.Log($"[{i}]: {*(encoded_frame_buffer_copy_ptr + i)}");
+                                Debug.Log($"[{j}]: {*(encoded_frame_buffer_copy_ptr + j)}");
                                 block_idx++;
                             }
                         }

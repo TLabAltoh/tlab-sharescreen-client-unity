@@ -289,9 +289,9 @@ namespace TLab.MTPEG
 
                                 encode_buffer_copy_ptr = encode_buffer_ptr + block_index * BLOCK_OFFSET_SIZE;
 
-                                foreach (var channel_size_index in new int[] { BlockHedder.Y_SIZE, BlockHedder.Cr_SIZE, BlockHedder.Cb_SIZE })
+                                for (int i = 0; i < BlockHedder.CHANNEL_SIZE_IDX.Length; i++)
                                 {
-                                    copy_length = (ushort)(dct_block_hedder_ptr[channel_size_index] << ENDIAN_SIZE_LOG2);
+                                    copy_length = (ushort)(dct_block_hedder_ptr[BlockHedder.CHANNEL_SIZE_IDX[i]] << ENDIAN_SIZE_LOG2);
 
                                     if (copy_length > DCT.BLOCK_SIZE * ENDIAN_SIZE)
                                     {

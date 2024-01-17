@@ -37,14 +37,9 @@ namespace TLab.MTPEG
             return;
         }
 
-        public static byte[][] CreateEncodedFrameBuffer(int size)
+        public static byte[] CreateEncodedFrameBuffer(int size)
         {
-            byte[][] encoded_frame_buffer = new byte[FRAME_NUM][];
-
-            for (int i = 0; i < FRAME_NUM; i++)
-            {
-                encoded_frame_buffer[i] = new byte[size];
-            }
+            byte[] encoded_frame_buffer = new byte[size];
 
             return encoded_frame_buffer;
         }

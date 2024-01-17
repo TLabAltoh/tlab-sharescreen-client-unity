@@ -91,9 +91,18 @@ void DCTInvert(uint3 gid : SV_GroupID)
 		uint quantization_luminance = ForwardQuantizationTable50Luminance[zigzag_invert];
 		uint quantization_chrominance = ForwardQuantizationTable50Chrominance[zigzag_invert];
 
-		int signed_y = DCTBlockBuffer[dct_result_buffer_idx + (Y_IDX << BLOCK_SIZE_LOG2) + i];
-		int signed_cr = DCTBlockBuffer[dct_result_buffer_idx + (Cr_IDX << BLOCK_SIZE_LOG2) + i];
-		int signed_cb = DCTBlockBuffer[dct_result_buffer_idx + (Cb_IDX << BLOCK_SIZE_LOG2) + i];
+		j = dct_result_buffer_idx + (Y_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_y = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		j = dct_result_buffer_idx + (Cr_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_cr = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		j = dct_result_buffer_idx + (Cb_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_cb = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		DCTBlockBuffer[dct_result_buffer_idx + (Y_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
+		DCTBlockBuffer[dct_result_buffer_idx + (Cr_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
+		DCTBlockBuffer[dct_result_buffer_idx + (Cb_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
 
 		BlockY[zigzag_invert] = SignedInt2Float(signed_y, quantization_luminance);
 		BlockCr[zigzag_invert] = SignedInt2Float(signed_cr, quantization_chrominance);

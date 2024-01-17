@@ -30,7 +30,7 @@ namespace TLab.MTPEG
         [SerializeField] private RawImage m_raw_image;
 
         [Header("End Point")]
-        [SerializeField] private string m_server_addr = "192.168.3.25";
+        [SerializeField] private string m_server_addr = "127.0.0.1";
         [SerializeField] private int m_server_port = 55555;
         [SerializeField] private int m_client_port = 50000;
 
@@ -39,13 +39,23 @@ namespace TLab.MTPEG
 
         [Header("Runtype")]
         [SerializeField] private RunType m_run_type;
+        [SerializeField] private TMPro.TextMeshProUGUI m_log_tmpro;
 
         private int m_block_width;
         private int m_block_height;
 
         private bool m_keep_alive = false;
 
-        private ClientState m_client_state;
+        private ClientState m_client_state = ClientState.CLOSED;
+
+        private SynchronizationContext m_context;
+
+        public string server_addr { get => m_server_addr; set => m_server_addr = value; }
+
+        public int server_port { get => m_server_port; set => m_server_port = value; }
+
+        public int client_port { get => m_client_port; set => m_client_port = value; }
+
 
         private struct LostPacketInfo
         {
@@ -62,10 +72,9 @@ namespace TLab.MTPEG
         private GraphicsBuffer m_dct_block_cs_buffer;
 
         private bool m_texture_update_flag = false;
-        private int m_texture_update_idx;
 
         private int m_encoded_frame_buffer_size;
-        private byte[][] m_encoded_frame_buffer;
+        private byte[] m_encoded_frame_buffer;
 
         private void CreateScreenTexture()
         {
@@ -138,6 +147,8 @@ namespace TLab.MTPEG
 
             InitializeTPEGDecoder(encoded_frame_buffer_size, decoded_frame_buffer_size);
 
+            Log("tpeg initialized ...");
+
             int packet_num_capacity = encoded_frame_buffer_size / DGRAM_BUFFER_SIZE + 1;
 
             Thread main_thread = new Thread(() =>
@@ -147,8 +158,15 @@ namespace TLab.MTPEG
                 UDPSocket udp_socket = null;
                 if (!UDPSocketUtil.CreateSocket(ref udp_socket, m_client_port, m_server_port, m_server_addr, 0))
                 {
+                    if (m_log_tmpro != null)
+                    {
+                        m_log_tmpro.text = "an error occurred when creating the socket ...";
+                    }
+
                     return;
                 }
+
+                Log("socket created ...");
 
                 var socket = udp_socket.socket;
 
@@ -208,7 +226,6 @@ namespace TLab.MTPEG
 
                                 m_frame_update_mutex.WaitOne();   // Update Frame
 
-                                m_texture_update_idx = last_frame_index;
                                 m_texture_update_flag = true;
 
                                 m_frame_update_mutex.ReleaseMutex();
@@ -246,7 +263,6 @@ namespace TLab.MTPEG
                                 m_frame_update_mutex.WaitOne();   // Update Frame
 
                                 m_texture_update_flag = true;
-                                m_texture_update_idx = frame_index;
 
                                 m_frame_update_mutex.ReleaseMutex();
 
@@ -270,7 +286,7 @@ namespace TLab.MTPEG
                         // copy received data
                         //
 
-                        fixed (byte* encode_buffer_ptr = m_encoded_frame_buffer[frame_index])
+                        fixed (byte* encode_buffer_ptr = m_encoded_frame_buffer)
                         {
                             byte* dct_block_hedder_ptr = packet_hedder_ptr + PacketHedder.HEDDER_SIZE;
                             byte* dct_block_buffer_ptr = dct_block_hedder_ptr + BlockHedder.HEDDER_SIZE;
@@ -327,7 +343,7 @@ namespace TLab.MTPEG
 
                 while (true)
                 {
-                    while (m_lost_packet_info_queue.Count < 0) ;
+                    while (m_lost_packet_info_queue.Count < 1) ;
 
                     m_queue_mutex.WaitOne();
 
@@ -367,6 +383,8 @@ namespace TLab.MTPEG
         {
             m_client_state = ClientState.CLOSING;
 
+            Log("client closing ...");
+
             m_keep_alive = false;
 
             UDPSocketUtil.CloseAllSocket();
@@ -382,6 +400,8 @@ namespace TLab.MTPEG
             yield return new WaitForSeconds(2f);    // wait for udp fix req thread closed
 
             m_client_state = ClientState.CLOSED;
+
+            Log("client closed ...");
 
             yield break;
         }
@@ -401,7 +421,7 @@ namespace TLab.MTPEG
             var stop_watch = new System.Diagnostics.Stopwatch();
 
 #if true
-            var encoded_frame_buffer = m_encoded_frame_buffer[0];
+            var encoded_frame_buffer = m_encoded_frame_buffer;
 
             MTPEGUtil.File2EncodedFrameBuffer(  // create encoded_frame_buffer from .tpeg file
                 ref encoded_frame_buffer,
@@ -501,6 +521,17 @@ namespace TLab.MTPEG
             test_cs_buffer.Release();
         }
 
+        public void Log(string message)
+        {
+            m_context.Post(obj =>
+            {
+                if (m_log_tmpro != null)
+                {
+                    m_log_tmpro.text = message;
+                }
+            }, null);
+        }
+
         public void ComputeShaderDispacheTest()
         {
             DecodeTest();
@@ -513,6 +544,8 @@ namespace TLab.MTPEG
             if (m_run_type == RunType.CS_TEST)
             {
                 Debug.LogError($"currently operating in {m_run_type}");
+
+                Log($"currently operating in { m_run_type}");
 
                 return;
             }
@@ -533,7 +566,7 @@ namespace TLab.MTPEG
 
         void Start()
         {
-
+            m_context = SynchronizationContext.Current;
         }
 
         private void Update()
@@ -542,8 +575,10 @@ namespace TLab.MTPEG
 
             if (m_texture_update_flag)
             {
-                var encoded_frame_buffer = m_encoded_frame_buffer[m_texture_update_idx];
+                var encoded_frame_buffer = m_encoded_frame_buffer;
                 m_encoded_frame_cs_buffer.SetData(encoded_frame_buffer, 0, 0, encoded_frame_buffer.Length);
+
+                m_texture_update_flag = false;
 
                 m_frame_update_mutex.ReleaseMutex();
 

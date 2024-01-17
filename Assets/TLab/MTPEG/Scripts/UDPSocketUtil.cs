@@ -99,7 +99,10 @@ namespace TLab.MTPEG
 
         public static void CloseAllSocket()
         {
-            foreach (int id in m_hashTable.Keys)
+            var key_array = new int[m_hashTable.Count];
+            m_hashTable.Keys.CopyTo(key_array, 0);
+
+            foreach (int id in key_array)
             {
                 CloseSocket(id);
             }

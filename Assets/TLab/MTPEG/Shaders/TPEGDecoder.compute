@@ -1,0 +1,166 @@
+#pragma kernel EntropyInvert
+#pragma kernel DCTInvert
+#pragma kernel BufferTest
+
+#include "TPEGUtil.cginc"
+#include "DCTUtil.cginc"
+
+int _SCREEN_WIDTH;
+int _SCREEN_HEIGHT;
+
+int _BLOCK_WIDTH;
+int _BLOCK_HEIGHT;
+
+RWTexture2D<float4> DecodedTexture;
+
+RWStructuredBuffer<int> EncodedFrameBuffer;
+RWStructuredBuffer<int> DCTBlockBuffer;
+
+[numthreads(1, 1, 1)]
+void EntropyInvert(uint3 gid : SV_GroupID)
+{
+	int group_id = gid.y * _BLOCK_WIDTH + gid.x;
+	int color_id = gid.z;
+
+	int src_idx_offset = (group_id * YCrCb_SIZE + color_id) << BLOCK_SIZE_RECV_AS_INT_LOG2;
+	int src_idx;
+
+	int dst_idx = (group_id * YCrCb_SIZE + color_id) << BLOCK_SIZE_LOG2;
+
+	int current_element;
+
+	uint i, array_idx, element_idx;
+
+	for (i = 0, array_idx = 0; i < (BLOCK_SIZE - 1); i++, array_idx++) {
+
+		/**
+		* i could not use 16-bit integers on my device,
+		* so i convert an int array with 16-bit allocations to 32 bits
+		*/
+		element_idx = (array_idx >> 1);
+
+		int src_idx = src_idx_offset + element_idx;
+
+		/**
+		* (element_idx << 1) == i
+		* true: ---> 0, 2, 4, 6, ..... ---> little endian
+		* true: ---> 1, 3, 5, 7, ..... ---> big endian
+		*/
+		current_element = (int(uint(EncodedFrameBuffer[src_idx]) << (((element_idx << 1) == array_idx) * SHORT_TYPE_BIT_SIZE)) >> SHORT_TYPE_BIT_SIZE);
+
+		/**
+		* data structure
+		*	level's sign bit	: 1bit
+		*	run's all bit	: 6 bit
+		*	level's rest bit	: 9bit
+		*/
+
+		/**
+		* get run's value
+		*	1 1 1 1 1 1 1 1
+		*		  &
+		*	0 1 1 1 1 1 1 0 (= 126) => 0 0 1 1 1 1 1 1 (= 63)
+		*/
+		i += ((uint(current_element) >> 9) & 63);
+
+		/**
+		* get level's value
+		*	1 1 1 1 1 1 1 1
+		*	       &
+		*	0 0 0 0 0 0 0 1 (= 1)
+		*
+		*	level = current_element & ((1 << 31) + (1 << 8) + 255)
+		*
+		*	((1 << 31) + (1 << 8) + 255) = -2147483137
+		*/
+		DCTBlockBuffer[dst_idx + i] = current_element & (-2147483137);
+	}
+}
+
+[numthreads(1, 1, 1)]
+void DCTInvert(uint3 gid : SV_GroupID)
+{
+	uint group_idx = gid.y * _BLOCK_WIDTH + gid.x;
+
+	uint dct_result_buffer_idx = group_idx * BLOCK_SIZE * DST_COLOR_SIZE;
+
+	uint i, j;
+
+	[unroll] for (i = 0; i < BLOCK_SIZE; i++) {
+		uint zigzag_invert = ZigZagIndexInvert[i];
+		uint quantization_luminance = ForwardQuantizationTable50Luminance[zigzag_invert];
+		uint quantization_chrominance = ForwardQuantizationTable50Chrominance[zigzag_invert];
+
+		j = dct_result_buffer_idx + (Y_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_y = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		j = dct_result_buffer_idx + (Cr_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_cr = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		j = dct_result_buffer_idx + (Cb_IDX << BLOCK_SIZE_LOG2) + i;
+		int signed_cb = DCTBlockBuffer[j]; DCTBlockBuffer[j] = 0.0f;
+
+		DCTBlockBuffer[dct_result_buffer_idx + (Y_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
+		DCTBlockBuffer[dct_result_buffer_idx + (Cr_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
+		DCTBlockBuffer[dct_result_buffer_idx + (Cb_IDX << BLOCK_SIZE_LOG2) + i] = 0.0f;
+
+		BlockY[zigzag_invert] = SignedInt2Float(signed_y, quantization_luminance);
+		BlockCr[zigzag_invert] = SignedInt2Float(signed_cr, quantization_chrominance);
+		BlockCb[zigzag_invert] = SignedInt2Float(signed_cb, quantization_chrominance);
+	}
+
+	// rocess rows
+	uint row_offset;
+	[unroll] for (uint row = 0; row < BLOCK_AXIS_SIZE; row++) {
+		row_offset = row << BLOCK_AXIS_SIZE_LOG2;
+		CS8x8IDCT_Butterfly_Y(row_offset, 1);
+		CS8x8IDCT_Butterfly_Cr(row_offset, 1);
+		CS8x8IDCT_Butterfly_Cb(row_offset, 1);
+	}
+
+	// process columns
+	uint col_offset;
+	[unroll] for (uint col = 0; col < BLOCK_AXIS_SIZE; col++) {
+		col_offset = col << BLOCK_AXIS_SIZE_LOG2;
+		CS8x8IDCT_Butterfly_Y(col, BLOCK_AXIS_SIZE);
+		CS8x8IDCT_Butterfly_Cr(col, BLOCK_AXIS_SIZE);
+		CS8x8IDCT_Butterfly_Cb(col, BLOCK_AXIS_SIZE);
+	}
+
+	uint frame_buffer_y = gid.y << BLOCK_AXIS_SIZE_LOG2;
+	uint frame_buffer_x = gid.x << BLOCK_AXIS_SIZE_LOG2;
+
+	[unroll] for (i = 0; i < BLOCK_AXIS_SIZE; i++) {
+		[unroll] for (j = 0; j < BLOCK_AXIS_SIZE; j++) {
+
+			uint block_copy_dst_idx = (j << BLOCK_AXIS_SIZE_LOG2) + i;
+
+			float y = BlockY[block_copy_dst_idx];
+			float cr = BlockCr[block_copy_dst_idx];
+			float cb = BlockCb[block_copy_dst_idx];
+
+			DecodedTexture[uint2(frame_buffer_x + i, frame_buffer_y + j)] = float4(Conv2B(y, cb), Conv2G(y, cr, cb), Conv2R(y, cr), 1.0f);
+		}
+	}
+}
+
+[numthreads(1, 1, 1)]
+void BufferTest(uint3 gid : SV_GroupID)
+{
+	int group_id = gid.y * _BLOCK_WIDTH + gid.x;
+	int color_id = gid.z;
+
+	int dst_idx = (group_id * YCrCb_SIZE + color_id) << BLOCK_SIZE_LOG2;
+
+	int level;
+
+	for (uint i = 0; i < BLOCK_SIZE; i++, dst_idx++) {
+		/**
+		* note that glsl does not leave a sign bit because
+		* it performs integer multiplication with shift operation.
+		*/
+		level = DCTBlockBuffer[dst_idx];
+
+		DCTBlockBuffer[dst_idx] = int(SignedInt2Float(level, 2));
+	}
+}

@@ -1,5 +1,5 @@
 # TLabShareScreen_Client_Unity_Android
-Client programme for decoding packets from TLabShareScreen_Server
+Client programe for decoding packets from TLabShareScreen_Server
 
 ## Demonstration
 

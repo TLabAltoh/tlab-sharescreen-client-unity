@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using static TLab.MTPEG.Constants;
 
@@ -40,6 +41,10 @@ namespace TLab.MTPEG
         [Header("Runtype")]
         [SerializeField] private RunType m_run_type;
         [SerializeField] private TMPro.TextMeshProUGUI m_log_tmpro;
+
+        [Header("Event")]
+        [SerializeField] private UnityEvent m_onStart;
+        [SerializeField] private UnityEvent m_onEnd;
 
         private int m_block_width;
         private int m_block_height;
@@ -138,6 +143,8 @@ namespace TLab.MTPEG
 
         private void StartSharing()
         {
+            m_onStart?.Invoke();
+
             m_lost_packet_info_queue.Clear();
 
             CreateScreenTexture();
@@ -147,7 +154,7 @@ namespace TLab.MTPEG
 
             InitializeTPEGDecoder(encoded_frame_buffer_size, decoded_frame_buffer_size);
 
-            Log("tpeg initialized ...");
+            Log("TPEG Initialized");
 
             int packet_num_capacity = encoded_frame_buffer_size / DGRAM_BUFFER_SIZE + 1;
 
@@ -160,13 +167,13 @@ namespace TLab.MTPEG
                 {
                     if (m_log_tmpro != null)
                     {
-                        m_log_tmpro.text = "an error occurred when creating the socket ...";
+                        m_log_tmpro.text = "[Error] Creating Socket";
                     }
 
                     return;
                 }
 
-                Log("socket created ...");
+                Log("Socket Created");
 
                 var socket = udp_socket.socket;
 
@@ -183,8 +190,10 @@ namespace TLab.MTPEG
                     fixed (byte* packet_hedder_ptr = buffer)
                     {
                         //
-                        // analysing packet headers
-                        // If the packet is not a retransmitted packet, the packet lost from the current is requested for retransmission.
+                        // Analysing packet headers If the
+                        // packet is not a retransmitted packet,
+                        // the packet lost from the current is
+                        // requested for retransmission.
                         //
 
                         ushort packet_index = (ushort)((ushort)(packet_hedder_ptr[PacketHedder.PACKET_INDEX_BE] << 8) | packet_hedder_ptr[PacketHedder.PACKET_INDEX_LE]);
@@ -381,9 +390,11 @@ namespace TLab.MTPEG
 
         private IEnumerator CloseSocketAsync()
         {
+            m_onEnd?.Invoke();
+
             m_client_state = ClientState.CLOSING;
 
-            Log("client closing ...");
+            Log("Client Closing");
 
             m_keep_alive = false;
 
@@ -401,7 +412,7 @@ namespace TLab.MTPEG
 
             m_client_state = ClientState.CLOSED;
 
-            Log("client closed ...");
+            Log("Client Closed");
 
             yield break;
         }
@@ -472,10 +483,10 @@ namespace TLab.MTPEG
 
             for (int i = 0; i < 180; i++)
             {
-                Debug.Log($"result [{i}] : {result[i]}");
+                Debug.Log($"Result [{i}] : {result[i]}");
             }
 
-            Debug.Log($"decoded time {stop_watch.ElapsedMilliseconds} ms, fps {1f / stop_watch.ElapsedMilliseconds * 1000}");
+            Debug.Log($"Decoded Time {stop_watch.ElapsedMilliseconds} ms, fps {1f / stop_watch.ElapsedMilliseconds * 1000}");
         }
 
         private void GraphicsBufferTest()
@@ -543,9 +554,11 @@ namespace TLab.MTPEG
         {
             if (m_run_type == RunType.CS_TEST)
             {
-                Debug.LogError($"currently operating in {m_run_type}");
+                var message = $"Currently: {m_run_type}";
 
-                Log($"currently operating in { m_run_type}");
+                Debug.LogError(message);
+
+                Log(message);
 
                 return;
             }
@@ -553,7 +566,9 @@ namespace TLab.MTPEG
             switch (m_client_state)
             {
                 case ClientState.CLOSING:
-                    Debug.LogError("termination process in progress");
+                    var message = "Termination Process in Progress";
+                    Debug.LogError(message);
+                    Log(message);
                     break;
                 case ClientState.OPENED:
                     StartCoroutine(CloseSocketAsync());

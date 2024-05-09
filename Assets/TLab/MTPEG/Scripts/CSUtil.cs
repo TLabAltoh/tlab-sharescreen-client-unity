@@ -9,8 +9,6 @@ namespace TLab.MTPEG
             if (graphics_buffer == null)
             {
                 graphics_buffer = new GraphicsBuffer(target, count, stride);
-
-                Debug.Log($"length {count}");
             }
         }
 

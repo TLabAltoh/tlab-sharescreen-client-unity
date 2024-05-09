@@ -4,7 +4,7 @@ using TLab.InputField;
 
 namespace TLab
 {
-    public class Configrater : MonoBehaviour
+    public class Configurator : MonoBehaviour
     {
         [SerializeField] private MTPEGClient m_client;
 

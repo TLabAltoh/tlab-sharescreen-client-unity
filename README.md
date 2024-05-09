@@ -22,10 +22,10 @@ Client programme for decoding packets from TLabShareScreen_Server
 | GPU      | Qualcomm Adreno 505, 619 | 
 
 ## Requires
-| Property     | Value                              |
-| ------------ | ---------------------------------- |
-| Color Space  | Gamma                              |
-| Graphics API | OpenGL Only (Reuire OpenGL ES 3.1) |
+| Property     | Value         |
+| ------------ | ------------  |
+| Color Space  | Gamma         |
+| Graphics API | OpenGL ES 3.1 |
 
 ## Install
 
@@ -39,6 +39,9 @@ git submodule update --init
 
 ## Note
 - Very slow performance due to software encoder. Also, it does not work properly with Oculus quest.
+
+## TODO
+- Switch from Unity's compute shaders to OpenCL
 
 ## link  
 [Screencast server is here](https://github.com/TLabAltoh/TLabShareScreen_Server)

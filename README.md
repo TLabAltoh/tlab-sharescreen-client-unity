@@ -1,5 +1,8 @@
 # tlab-sharescreen-client-unity
-This is an [tlab-sharescreen-server-win](https://github.com/TLabAltoh/TLabShareScreen_Server) client program. Streaming video over a custom protocol (UDP) and implementing a frame decoder with compute shaders.
+This is an [tlab-sharescreen-server-win](https://github.com/TLabAltoh/tlab-sharescreen-server-win) client program. Streaming video over a custom protocol (UDP) and implementing a frame decoder with compute shaders.
+
+> [!WARNING]  
+> Currently this program works well on local host (Windows), but very low performance on Android device. Maybe it is worth to replace unity's compute shader with OpenCL, but undecided to work on it. Because I don't intend to make this repository practical, because this repository is currently experimental.
 
 ## Screenshot
 
@@ -32,6 +35,3 @@ cd tlab-sharescreen-client-unity
 
 git submodule update --init
 ```
-
-> [!WARNING]  
-> Currently this program works well on local host (Windows), but very low performance on Android device. Maybe it is worth to replace unity's compute shader with OpenCL, but undecided to work on it. Because I don't intend to make this repository practical, because this repository is currently experimental.

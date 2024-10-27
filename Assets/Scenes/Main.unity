@@ -3422,6 +3422,34 @@ PrefabInstance:
       propertyPath: m_keyborad
       value: 
       objectReference: {fileID: 606868421}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 67609842}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TLab.VKeyborad.SimpleInputField, TLabVKeyborad.Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1086845047182849917, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3544,6 +3572,34 @@ PrefabInstance:
       propertyPath: m_keyborad
       value: 
       objectReference: {fileID: 606868421}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 858818769}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TLab.VKeyborad.SimpleInputField, TLabVKeyborad.Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 948701867960106899, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
+      propertyPath: m_onEnterPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1086845047182849917, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

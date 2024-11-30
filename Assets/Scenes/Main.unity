@@ -1679,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7080640460636786048, guid: 58607dc0d897b2b46a8496ffaa5fa6a1, type: 3}
       propertyPath: m_Name
-      value: SimpleKeyborad
+      value: VKeyborad
       objectReference: {fileID: 0}
     - target: {fileID: 7080640460636786048, guid: 58607dc0d897b2b46a8496ffaa5fa6a1, type: 3}
       propertyPath: m_IsActive
@@ -2299,8 +2299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_client: {fileID: 884000677}
-  m_client_port_input: {fileID: 858818769}
-  m_server_address_input: {fileID: 67609842}
+  m_port: {fileID: 858818769}
+  m_address: {fileID: 67609842}
 --- !u!1 &947491544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,7 +3552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5175974414533522646, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
       propertyPath: m_Name
-      value: SimpleInputField
+      value: InputField
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
@@ -3702,7 +3702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5175974414533522646, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}
       propertyPath: m_Name
-      value: SimpleInputField
+      value: InputField
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e871ea333fceb4390eeadc70eb8d27, type: 3}

@@ -8,13 +8,13 @@ namespace TLab
     {
         [SerializeField] private MTPEGClient m_client;
 
-        [SerializeField] private SimpleInputField m_client_port_input;
-        [SerializeField] private SimpleInputField m_server_address_input;
+        [SerializeField] private InputField m_port;
+        [SerializeField] private InputField m_address;
 
         public void Configuration()
         {
-            m_client.server_addr = m_server_address_input.text;
-            m_client.client_port = int.Parse(m_client_port_input.text);
+            m_client.server_addr = m_address.text;
+            m_client.client_port = int.Parse(m_port.text);
         }
     }
 }
